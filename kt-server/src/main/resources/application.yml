@@ -8,3 +8,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/kt-talk-db
+  security:
+    user:
+      name: user
+      password: pass
