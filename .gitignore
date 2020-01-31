@@ -1,2 +1,4 @@
 # Default ignored files
-/kt-openfeign-talk.iws
+kt-openfeign-talk.iws
+kt-openfeign-talk.ipr
+httpRequests/*

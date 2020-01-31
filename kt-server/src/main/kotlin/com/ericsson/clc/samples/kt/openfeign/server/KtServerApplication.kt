@@ -1,6 +1,5 @@
 package com.ericsson.clc.samples.kt.openfeign.server
 
-import lombok.RequiredArgsConstructor
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -23,7 +22,6 @@ fun main(args: Array<String>) {
 }
 
 @RestController
-@RequiredArgsConstructor
 class PersonController @Autowired constructor(private var repository: PersonRepository) {
 	@GetMapping("/all", produces = [MediaType.APPLICATION_JSON_VALUE])
 	fun all(): List<Person> = repository.findAll()
