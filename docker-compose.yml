@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  kt-talk-db:
+    restart: always
+    image: mongo:4-bionic
+    environment:
+      TZ: Australia/Sydney
+    ports:
+      - 27017:27017/tcp
+
