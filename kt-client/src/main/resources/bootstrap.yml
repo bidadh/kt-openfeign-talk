@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: kt-client
+  output:
+    ansi:
+      enabled: ALWAYS
